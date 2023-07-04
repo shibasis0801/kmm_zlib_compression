@@ -13,15 +13,20 @@ class Greeting {
             .joinToString("")
     }
 
-    fun greet(): String {
-        val original = (1..10000).map { "Hello how are you, World!" }.joinToString()
-
-        val compressed = Compressor.compress(CompressionRequest(original))
+    fun testCompression(input: String, alsoPrint: Boolean = false) {
+        val compressed = Compressor.compress(CompressionRequest(input))
         val decompressed = Compressor.decompress(DecompressionRequest(compressed!!.base64EncodedString))
 
-        println(original == decompressed?.data)
-        println(original)
-        println(decompressed?.data)
+        println(if (input == decompressed?.data) "Input and Output Match" else "Compression Error")
+        if (alsoPrint) {
+            println(input)
+            println(decompressed?.data)
+        }
+    }
+
+    fun greet(): String {
+        testCompression((1..100000).map { "Hello how are you, World!" }.joinToString())
+        testCompression(randomAlphaNumericString(2_000_000))
         return ""
     }
 }
