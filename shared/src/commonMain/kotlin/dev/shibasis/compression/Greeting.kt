@@ -1,4 +1,4 @@
-package com.example.myapplication
+package dev.shibasis.compression
 
 import kotlin.random.Random
 

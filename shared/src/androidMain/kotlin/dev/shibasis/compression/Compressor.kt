@@ -1,4 +1,4 @@
-package com.example.myapplication
+package dev.shibasis.compression
 
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream

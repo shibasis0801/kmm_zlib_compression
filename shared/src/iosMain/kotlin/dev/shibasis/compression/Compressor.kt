@@ -1,4 +1,4 @@
-package com.example.myapplication
+package dev.shibasis.compression
 
 import kotlinx.cinterop.UByteVar
 import kotlinx.cinterop.allocArray

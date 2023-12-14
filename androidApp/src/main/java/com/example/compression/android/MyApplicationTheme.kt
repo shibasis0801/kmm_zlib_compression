@@ -1,4 +1,4 @@
-package com.example.myapplication.android
+package dev.shibasis.compression.android
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape

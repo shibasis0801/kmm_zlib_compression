@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication.android"
+    namespace = "com.example.dev.shibasis.compression.android"
     compileSdk = 33
     defaultConfig {
-        applicationId = "com.example.myapplication.android"
+        applicationId = "com.example.dev.shibasis.compression.android"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
